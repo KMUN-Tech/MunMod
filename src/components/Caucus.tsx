@@ -278,7 +278,7 @@ export default class Caucus extends React.Component<Props, State> {
     return (
       <Container style={{ 'padding-bottom': '2em' }}>
         <Helmet>
-          <title>{`${caucus?.name} - Muncoordinated`}</title>
+          <title>{`${caucus?.name} - Kumarans MunMod`}</title>
         </Helmet>
         <Grid columns="equal" stackable>
           {header}

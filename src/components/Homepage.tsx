@@ -22,7 +22,7 @@ interface HomepageHeadingProps {
   mobile: boolean;
 }
 
-const REPO_LINK = 'https://github.com/MaxwellBo/Muncoordinated-2';
+const REPO_LINK = 'https://github.com/MaxwellBo/Kumarans MunMod-2';
 
 /* eslint-disable react/no-multi-comp */
 /* Heads up! HomepageHeading uses inline styling, however it's not the best practice. Use CSS or styled components for
@@ -32,7 +32,7 @@ const HomepageHeading = ({ mobile }: HomepageHeadingProps) => (
   <Container text>
     <Header
       as="h1"
-      content="Muncoordinated"
+      content="Kumarans MunMod"
       inverted
       style={{
         fontSize: mobile ? '2em' : '4em',
@@ -246,7 +246,7 @@ export default class Homepage extends React.Component<{}, {
                   Everyone will see all updates in real-time, without needing to refresh the page. It's like Google Docs, but for MUN.
                 </p>
                 <p style={{ fontSize: '1.33em' }}>
-                 For virtual MUNs, we recommend pairing Muncoordinated with <a href="https://discord.com/">Discord</a>, which allows you to speak, pass notes, &amp; share files and links.
+                 For virtual MUNs, we recommend pairing Kumarans MunMod with <a href="https://discord.com/">Discord</a>, which allows you to speak, pass notes, &amp; share files and links.
                 </p>
                 <p style={{ fontSize: '1.33em' }}>
                   If you've got a big committee, multiple directors can manage it at the same time, using the same account.
@@ -270,7 +270,7 @@ export default class Homepage extends React.Component<{}, {
               <Grid.Column width={8}>
                 <Header as="h3" style={{ fontSize: '2em' }}>A comprehensive feature set</Header>
                 <div style={{ fontSize: '1.33em' }}>
-                  Muncoordinated supports: <br />
+                  Kumarans MunMod supports: <br />
                   <List as="ul">
                     <List.Item as="li">Moderated and unmoderated caucuses</List.Item>
                     <List.Item as="li">Resolutions and amendments</List.Item>
@@ -284,10 +284,10 @@ export default class Homepage extends React.Component<{}, {
                 </div>
                 <Header as="h3" style={{ fontSize: '2em' }}>Free and open-source</Header>
                 <p style={{ fontSize: '1.33em' }}>
-                  All of Muncoordinated's features are available for free, not locked behind paywalls.
+                  All of Kumarans MunMod's features are available for free, not locked behind paywalls.
                 </p>
                 <p style={{ fontSize: '1.33em' }}>
-                  It's also <a href="https://github.com/MaxwellBo/Muncoordinated-2">open-source</a>, so you're free to customize it to your needs and liking.
+                  It's also <a href="https://github.com/MaxwellBo/Kumarans MunMod-2">open-source</a>, so you're free to customize it to your needs and liking.
                 </p>
               </Grid.Column>
               <Grid.Column floated="right" width={8}>
@@ -313,7 +313,7 @@ export default class Homepage extends React.Component<{}, {
           horizontal
           style={{ margin: '3em 0em', textTransform: 'uppercase' }}
         >
-          Conferences using Muncoordinated
+          Conferences using Kumarans MunMod
         </Divider> */}
         {/* <Segment style={{ padding: '0em' }} vertical>
           <Grid celled="internally" columns="equal" stackable>
@@ -425,7 +425,7 @@ export default class Homepage extends React.Component<{}, {
                     <List.Item as="a" href={REPO_LINK}>Source</List.Item>
                     <List.Item
                       as="a"
-                      href="https://github.com/MaxwellBo/Muncoordinated-2/blob/master/LICENSE"
+                      href="https://github.com/MaxwellBo/Kumarans MunMod-2/blob/master/LICENSE"
                     >
                       License
                     </List.Item>
@@ -435,7 +435,7 @@ export default class Homepage extends React.Component<{}, {
                 <Grid.Column width={3}>
                   <Header inverted as="h4" content="Services" />
                   <List link inverted>
-                    <List.Item as="a" href="https://github.com/MaxwellBo/Muncoordinated-2/issues">Support</List.Item>
+                    <List.Item as="a" href="https://github.com/MaxwellBo/Kumarans MunMod-2/issues">Support</List.Item>
                     <List.Item as="a" href="https://www.helpmymun.com/">MUN Resources</List.Item>
                     {/* <List.Item as="a">FAQ</List.Item> TODO*/}
                   </List>

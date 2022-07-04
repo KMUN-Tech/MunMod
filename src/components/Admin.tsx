@@ -405,7 +405,7 @@ export default class Admin extends React.Component<Props, State> {
     return (
       <Container text style={{ padding: '1em 0em 1.5em' }}>
         <Helmet>
-          <title>Setup - Muncoordinated</title>
+          <title>Setup - Kumarans MunMod</title>
         </Helmet>
         <Tab panes={panes} />
       </Container>

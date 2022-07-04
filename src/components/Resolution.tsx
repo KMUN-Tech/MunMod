@@ -801,7 +801,7 @@ export default class Resolution extends React.Component<Props, State> {
     return (
       <Container style={{ 'padding-bottom': '2em' }}>
         <Helmet>
-          <title>{`${resolution?.name} - Muncoordinated`}</title>
+          <title>{`${resolution?.name} - Kumarans MunMod`}</title>
         </Helmet>
         <Grid columns="equal" stackable>
           <Grid.Row>

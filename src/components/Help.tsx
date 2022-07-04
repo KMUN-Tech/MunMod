@@ -37,7 +37,7 @@ export const KEYBOARD_SHORTCUT_LIST = (
 
 export default class Help extends React.PureComponent<{}, {}> {
   gpl = ( 
-    <a href="https://github.com/MaxwellBo/Muncoordinated-2/blob/master/LICENSE">
+    <a href="https://github.com/MaxwellBo/Kumarans MunMod-2/blob/master/LICENSE">
       GNU GPLv3
     </a>
   );
@@ -48,7 +48,7 @@ export default class Help extends React.PureComponent<{}, {}> {
     return (
       <Container text style={{ padding: '1em 0em' }}>
         <Helmet>
-          <title>{`Help - Muncoordinated`}</title>
+          <title>{`Help - Kumarans MunMod`}</title>
         </Helmet>
         <Header as="h3" attached="top">Keyboard shortcuts</Header>
         <Segment attached="bottom">
@@ -60,8 +60,8 @@ export default class Help extends React.PureComponent<{}, {}> {
           <br />
           <List ordered>
             <List.Item>
-              Create an issue on the <a href="https://github.com/MaxwellBo/Muncoordinated-2/issues">
-                Muncoordinated issue tracking page
+              Create an issue on the <a href="https://github.com/MaxwellBo/Kumarans MunMod-2/issues">
+                Kumarans MunMod issue tracking page
               </a>. You can also use this for help requests regarding the apps usage
             </List.Item>
             <List.Item>
@@ -80,7 +80,7 @@ export default class Help extends React.PureComponent<{}, {}> {
         </Segment>
         <Header as="h3" attached="top">License</Header>
         <Segment attached="bottom">
-          Muncoordinated is licensed under {gpl}
+          Kumarans MunMod is licensed under {gpl}
         </Segment>
       </Container>
     );

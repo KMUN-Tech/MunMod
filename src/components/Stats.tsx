@@ -145,7 +145,7 @@ export default class Stats extends React.Component<Props, State> {
     return (
       <Container text style={{ padding: '1em 0em 1.5em' }}>
         <Helmet>
-          <title>{`Stats - Muncoordinated`}</title>
+          <title>{`Stats - Kumarans MunMod`}</title>
         </Helmet>
         <Table compact celled definition>
           <Table.Header>

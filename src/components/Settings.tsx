@@ -82,7 +82,7 @@ export default class Settings extends React.Component<Props, State> {
     return (
       <Container text style={{ padding: '1em 0em' }}>
         <Helmet>
-          <title>{`Settings - Muncoordinated`}</title>
+          <title>{`Settings - Kumarans MunMod`}</title>
         </Helmet>
         <Header as="h3" attached="top">Settings</Header>
         <Segment attached="bottom" loading={!committee}>

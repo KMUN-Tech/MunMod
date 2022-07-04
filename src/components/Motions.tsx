@@ -947,7 +947,7 @@ export class MotionsComponent extends React.Component<Props & Hooks, State> {
     return (
       <Container text style={{ padding: '1em 0em' }}>
         <Helmet>
-          <title>{`Motions - Muncoordinated`}</title>
+          <title>{`Motions - Kumarans MunMod`}</title>
         </Helmet>
         {renderAdder(committee)}
         <Divider hidden />
