@@ -1,7 +1,8 @@
 {
-  "name": "muncoordinated",
+  "name": "kumaransmunmod",
   "version": "1.0.0",
   "private": true,
+  "main": "src/main.js",
   "dependencies": {
     "@sentry/react": "^5.24.2",
     "@sentry/tracing": "^5.24.2",
@@ -30,14 +31,18 @@
     "typescript": "3.7.2"
   },
   "devDependencies": {
+    "concurrently": "^7.2.2",
     "cypress": "3.6.1",
-    "netlify-plugin-cypress": "^1.4.1"
+    "electron": "^19.0.7",
+    "netlify-plugin-cypress": "^1.4.1",
+    "wait-on": "^6.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "electron:start": "concurrently \"yarn start\" \"wait-on http://localhost:3000 && electron .\""
+
   },
   "eslintConfig": {
     "extends": "react-app"
