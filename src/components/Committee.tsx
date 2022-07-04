@@ -22,7 +22,6 @@ import Footer from './Footer';
 import Settings, { SettingsData, DEFAULT_SETTINGS } from './Settings';
 import Files, { PostID, PostData } from './Files';
 import { LoginModal } from './Auth';
-import { CommitteeShareHint } from './ShareHint';
 import Notifications from './Notifications';
 import { putResolution } from '../actions/resolution-actions';
 import ConnectionStatus from './ConnectionStatus';
@@ -459,7 +458,6 @@ export default class Committee extends React.Component<Props, State> {
             />
           </List.Item>
         </List>
-        <CommitteeShareHint committeeID={this.props.match.params.committeeID} />
         <Segment textAlign="center" basic>
           <Button as="a" primary size="large" onClick={this.gotoSetup}>
             Setup committee

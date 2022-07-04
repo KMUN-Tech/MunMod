@@ -1,7 +1,6 @@
 import * as React from 'react';
 import { Button, Segment, Header, List, Container } from 'semantic-ui-react';
 import { Helmet } from 'react-helmet';
-import { CLIENT_VERSION, VersionLink } from './Footer';
 
 export const KEYBOARD_SHORTCUT_LIST = (
   <List>
@@ -36,14 +35,7 @@ export const KEYBOARD_SHORTCUT_LIST = (
 );
 
 export default class Help extends React.PureComponent<{}, {}> {
-  gpl = ( 
-    <a href="https://github.com/MaxwellBo/Kumarans MunMod-2/blob/master/LICENSE">
-      GNU GPLv3
-    </a>
-  );
-
   render() {
-    const { gpl } = this;
 
     return (
       <Container text style={{ padding: '1em 0em' }}>
@@ -54,6 +46,7 @@ export default class Help extends React.PureComponent<{}, {}> {
         <Segment attached="bottom">
         {KEYBOARD_SHORTCUT_LIST}
         </Segment>
+        {/*
         <Header as="h3" attached="top">Bug reporting &amp; help requests</Header>
         <Segment attached="bottom">
           In the event that a bug or issue crops up, follow these steps:
@@ -82,6 +75,7 @@ export default class Help extends React.PureComponent<{}, {}> {
         <Segment attached="bottom">
           Kumarans MunMod is licensed under {gpl}
         </Segment>
+    */}
       </Container>
     );
   }

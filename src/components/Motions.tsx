@@ -951,25 +951,7 @@ export class MotionsComponent extends React.Component<Props & Hooks, State> {
         </Helmet>
         {renderAdder(committee)}
         <Divider hidden />
-        <Checkbox
-          style={{ 'padding-right': '50px' }}
-          label="Delegates can propose motions"
-          toggle
-          checked={motionsArePublic}
-          onChange={
-            checkboxHandler<SettingsData>(
-              committeeFref.child('settings'),
-              'motionsArePublic')}
-        />
-        <Checkbox
-          label="Delegates can vote on motions"
-          toggle
-          checked={motionVotes}
-          onChange={
-            checkboxHandler<SettingsData>(
-              committeeFref.child('settings'),
-              'motionVotes')}
-        />
+  
         {(motionVotes || motionsArePublic)
           && <MotionsShareHint 
             committeeID={committeeID}

@@ -444,27 +444,6 @@ export default class Files extends React.Component<Props, State> {
     this.setState({ filtered: data.value });
   }
 
-  renderFilter = () => {
-    const { committee } = this.state;
-
-    const memberOptions = recoverMemberOptions(committee);
-
-    return (
-      <Form>
-        <Form.Dropdown
-          icon="search"
-          value={this.state.filtered.map(x => x)}
-          search
-          multiple
-          selection
-          onChange={this.setFilter}
-          options={memberOptions}
-          label="View posts only by"
-        />
-      </Form>
-    )
-  }
-
   deletePost = (postID: PostID) => () => {
     this.state.committeeFref.child('files').child(postID).remove();
   }
@@ -632,7 +611,7 @@ export default class Files extends React.Component<Props, State> {
           panes={panes} 
         />
         <div>&nbsp;</div> {/* Whitespace */}
-        {this.renderFilter()}
+        
         <Feed size="large">
           {committee ? Object.keys(files).reverse()
             .filter(key => this.isFiltered(files[key]))

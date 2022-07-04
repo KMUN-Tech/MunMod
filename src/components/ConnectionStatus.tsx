@@ -56,8 +56,7 @@ export default class ConnectionStatus extends React.Component<Props, State> {
         <Icon name="circle notched" loading />
         <Message.Content>
           <Message.Header>Connection Lost</Message.Header>
-          Changes are no longer being committed to the server. Either wait for a reconnection
-          or refresh the page. If you refresh the page, you will need to log in again.
+          Do not refresh or close the page till you reconnect.
         </Message.Content>
       </Message>
     ) : <div />;

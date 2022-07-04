@@ -644,16 +644,8 @@ export default class Resolution extends React.Component<Props, State> {
             {seconderTree}
             {IDENTITCAL_PROPOSER_SECONDER}
             {provisionTree}
-            <Form.Checkbox
-              label="Delegates can amend"
-              indeterminate={!resolution}
-              toggle
-              checked={amendmentsArePublic(resolution)}
-              onChange={checkboxHandler<ResolutionData>(resolutionFref, 'amendmentsArePublic')}
-            />
           </Form>
         </Segment>
-        {amendmentsArePublic(resolution) && DELEGATES_CAN_AMEND_NOTICE}
       </React.Fragment>
     );
   }
