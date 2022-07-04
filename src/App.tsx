@@ -18,6 +18,7 @@ import Homepage from './components/Homepage';
 import Committee from './components/Committee';
 import { NotFound } from './components/NotFound';
 
+/*
 const firebaseConfig = {
   apiKey: 'AIzaSyA9EuEf7m3YOTBhBNhoe7DcOIZJP2toL6w',
   authDomain: 'muncoordinated.firebaseapp.com',
@@ -28,9 +29,18 @@ const firebaseConfig = {
   appId: "1:308589918735:web:f3567ce28d637eba40017a",
   measurementId: "G-DPWPPBRD4M"
 };
+*/
+const firebaseConfig = {
+  apiKey: "AIzaSyCIJ3BF-r1PXBDX7XtOJPDm1meBOq9rRUg",
+  authDomain: "kmunmod.firebaseapp.com",
+  databaseURL: "https://kmunmod-default-rtdb.asia-southeast1.firebasedatabase.app",
+  projectId: "kmunmod",
+  storageBucket: "kmunmod.appspot.com",
+  messagingSenderId: "587328914948",
+  appId: "1:587328914948:web:b921d845dded0d3fd89751"
+};
 
 firebase.initializeApp(firebaseConfig);
-firebase.analytics();
 
 class App extends React.Component {
   render() {
