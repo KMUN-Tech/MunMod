@@ -13,7 +13,6 @@ import Stats from './Stats';
 import { MotionID, MotionData } from './Motions';
 import { TimerData, DEFAULT_TIMER } from './Timer';
 import Unmod from './Unmod';
-import Notes from './Notes';
 import Help from './Help';
 import Motions from './Motions';
 import { putCaucus } from '../actions/caucus-actions';
@@ -357,14 +356,6 @@ function ResponsiveNav(props: ResponsiveContainerProps) {
             {resolutionItems}
           </Dropdown.Menu>
         </Dropdown>
-        <Dropdown key="strawpolls" item text="Strawpolls" loading={!committee}>
-          <Dropdown.Menu>
-            {makeSubmenuButton('New strawpoll', 'add', pushStrawpoll)}
-            {strawpollItems}
-          </Dropdown.Menu>
-        </Dropdown>
-        {makeMenuItem('Notes', 'sticky note outline')}
-        {makeMenuItem('Posts', 'file outline')}
         {makeMenuItem('Stats', 'chart bar')}
         <Menu.Menu key="icon-submenu" position="right">
           {makeMenuIcon('Settings', 'settings')}
@@ -494,13 +485,10 @@ export default class Committee extends React.Component<Props, State> {
           <Route exact={true} path="/committees/:committeeID/stats" component={Stats} />
           <Route exact={true} path="/committees/:committeeID/unmod" component={Unmod} />
           <Route exact={true} path="/committees/:committeeID/motions" component={Motions} />
-          <Route exact={true} path="/committees/:committeeID/notes" component={Notes} />
-          <Route exact={true} path="/committees/:committeeID/posts" component={Files} />
           <Route exact={true} path="/committees/:committeeID/settings" component={Settings} />
           <Route exact={true} path="/committees/:committeeID/help" component={Help} />
           <Route path="/committees/:committeeID/caucuses/:caucusID" component={Caucus} />
           <Route path="/committees/:committeeID/resolutions/:resolutionID/:tab?" component={Resolution} />
-          <Route path="/committees/:committeeID/strawpolls/:strawpollID" component={Strawpoll} />
           <Footer />
         </ResponsiveNav>
       </React.Fragment>
