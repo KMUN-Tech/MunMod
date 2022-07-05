@@ -2,7 +2,7 @@
   "name": "kumaransmunmod",
   "version": "1.0.0",
   "private": true,
-  "main": "src/main.js",
+  "main": "src/index.tsx",
   "dependencies": {
     "@sentry/react": "^5.24.2",
     "@sentry/tracing": "^5.24.2",
@@ -39,6 +39,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "electron:start": "concurrently \"yarn start\" \"wait-on http://localhost:3000 && electron .\""
